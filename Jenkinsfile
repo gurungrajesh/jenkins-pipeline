@@ -17,6 +17,11 @@ pipeline {
 
       }
     }
+    stage('staging') {
+      step {
+        echo "Building Staging"
+      }
+    }
 
   }
   environment {
