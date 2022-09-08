@@ -4,7 +4,7 @@ pipeline {
     stage('code pull') {
       steps {
         sh ''' #!/bin/bash
-        mkdir test
+        ls -lth
              '''
 
       }
