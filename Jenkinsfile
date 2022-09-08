@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('test') {
           steps {
-            echo 'Testing Phase'
+            echo $PWD
           }
         }
 
