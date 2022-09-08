@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('test') {
+    stage('code pull') {
       steps {
-        input message: 'Do you want to continue', ok: 'Yes', parameters: [booleanParam('yes')]
+        sh -c "echo $PWD"
       }
     }
 
