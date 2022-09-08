@@ -4,7 +4,8 @@ pipeline {
     stage('code pull') {
       steps {
         sh ''' #!/bin/bash
-        free -m
+        echo "Hello from bash"
+                    echo "Who I'm $SHELL"
         '''
 
       }
