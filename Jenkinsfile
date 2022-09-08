@@ -2,11 +2,10 @@ pipeline {
   agent any
   stages {
     stage('test') {
-          steps {
-            echo $PWD
-          }
-        }
-
+      steps {
+        echo $PWD
       }
     }
-    
+
+  }
+}
