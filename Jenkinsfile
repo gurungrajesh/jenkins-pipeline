@@ -3,8 +3,7 @@ pipeline {
   stages {
     stage('test') {
       steps {
-        echo 'hello'
-        sh 'echo $PWD'
+        input 'Do you want to continue'
       }
     }
 
