@@ -5,7 +5,7 @@ pipeline {
       steps {
         sh ''' #!/bin/bash
         echo "Hello from bash"
-                    echo "Who I'm" date
+                    echo "Who I'm" $date
         '''
 
       }
