@@ -3,7 +3,10 @@ pipeline {
   stages {
     stage('code pull') {
       steps {
-        sh returnStdout: true, script: 'echo $PWD'
+        sh ''' #!/bin/bash
+        free -m
+        '''
+
       }
     }
 
