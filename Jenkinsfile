@@ -3,8 +3,8 @@ pipeline {
   stages {
     stage('test') {
       steps {
-        
-      }input message: 'Do you want to continue', ok: 'Yes', parameters: [booleanParam('yes')]
+        input message: 'Do you want to continue', ok: 'Yes', parameters: [booleanParam('yes')]
+      }
     }
 
   }
